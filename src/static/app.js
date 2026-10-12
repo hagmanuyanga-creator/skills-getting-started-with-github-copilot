@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const activity = document.getElementById("activity").value;
 
     try {
-        const query = new URLSearchParams({ email });
+      const query = new URLSearchParams({ email });
       const response = await fetch(
         `/activities/${encodeURIComponent(activity)}/signup?${query}`,
         {
